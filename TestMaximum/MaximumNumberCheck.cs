@@ -6,7 +6,7 @@ namespace TestMaximum
 {
     class MaximumNumberCheck
     {
-        public static int MaximumIntegerNumber(int firstValue, int secondValue, int thirdValue)
+        public static float MaximumNumber(float firstValue, float secondValue, float thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
