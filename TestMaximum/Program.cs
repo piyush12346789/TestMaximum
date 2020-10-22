@@ -6,12 +6,15 @@ namespace TestMaximum
     {
         static void Main(string[] args)
         {
-            string TC1 = MaximumNumberCheck.MaximumNumber("ghi","def","abc");
-            string TC2 = MaximumNumberCheck.MaximumNumber("mno", "pqr", "jkl");
-            string TC3 = MaximumNumberCheck.MaximumNumber("stu", "vwx", "yza");
-            Console.WriteLine("Maximum number in TC1 is: {0}",TC1);
-            Console.WriteLine("Maximum number in TC2 is: {0}",TC2);
-            Console.WriteLine("Maximum number in TC3 is: {0}",TC3);
+            int[] intArray = { 112, 344, 432, 555, 678 };
+            GenericMaximum<int> generic = new GenericMaximum<int>(intArray);
+            Console.WriteLine(generic.MaxValue());
+            float[] floatArray = { 11.2f, 34.4f, 4.32f, 55.5f, 6.78f };
+            GenericMaximum<float> genericFloat = new GenericMaximum<float>(floatArray);
+            Console.WriteLine(genericFloat.MaxValue());
+            string[] stringArray = { "a111", "b222", "c333", "d55", "e999" };
+            GenericMaximum<string> genericString = new GenericMaximum<string>(stringArray);
+            Console.WriteLine(genericString.MaxValue());
         }
     }
 }
